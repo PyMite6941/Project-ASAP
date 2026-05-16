@@ -16,6 +16,10 @@
   max-width: 14ch;
 }
 
+.heroName {
+  color: var(--hero-color);
+}
+
 .headline em {
   font-style: italic;
   color: var(--accent);

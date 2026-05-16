@@ -5,13 +5,14 @@ export default function Hero() {
 		<section className={`${styles.hero} section`}>
 			<p className='label'>Est. 2026</p>
 			<h1 className={styles.headline}>
-				Project ASAP
+				<span className={styles.heroName}>Project ASAP</span>
 				<br />
-				<em>goes here.</em>
+				<em>Immediate Project Recovery For All</em>
 			</h1>
 			<p className={styles.sub}>
-				A short description of what this is and why it matters. One or two
-				sentences max — keep it sharp.
+				Many natural disasters happen across the globe, especially in Southeast
+				Asia. This project works to alleviate the suffering from these events
+				for everyone affected.
 			</p>
 			<div className={styles.actions}>
 				<button className={styles.btnPrimary}>Get started</button>
