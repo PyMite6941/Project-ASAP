@@ -21,6 +21,7 @@
 
 .body {
 	color: var(--text-muted);
+	font-size: clamp(1.1rem, 2vw, 1.4rem);
 	line-height: 1.75;
 	width: 100%;
 }
