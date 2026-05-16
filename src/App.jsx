@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import LoginSignup from './pages/LoginSignup';
 import Donations from './pages/Donations';
 import FindPeople from './pages/FindPeople';
+import Contacts from './pages/Contacts';
 
 function Home() {
 	return (
@@ -81,6 +82,10 @@ export default function App() {
 				<Route
 					path='/find-people'
 					element={<FindPeople />}
+				/>
+				<Route
+					path='/contacts'
+					element={<Contacts />}
 				/>
 			</Routes>
 			<Footer />

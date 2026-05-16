@@ -1,0 +1,189 @@
+.generalContact {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	margin-top: 1.5rem;
+	padding: 1.5rem;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	background: var(--accent-dim);
+	max-width: 480px;
+}
+
+.contactLine {
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+}
+
+.contactLineLabel {
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	min-width: 5rem;
+}
+
+.contactLine a,
+.contactLine span {
+	font-size: 0.95rem;
+	color: var(--text);
+}
+
+/* ── team grid ── */
+.teamGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 1.25rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	background: var(--accent-dim);
+	transition: border-color 0.2s ease;
+}
+
+.card:hover {
+	border-color: var(--accent);
+}
+
+.avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background: var(--accent);
+	color: var(--on-accent);
+	font-family: var(--font-mono);
+	font-size: 0.9rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.05em;
+}
+
+.cardBody {
+	flex: 1;
+}
+
+.cardName {
+	font-family: var(--font-display);
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--text);
+}
+
+.cardRole {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+	margin-top: 0.2rem;
+}
+
+.cardRegion {
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--accent);
+	margin-top: 0.5rem;
+}
+
+.cardContact {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid var(--border);
+}
+
+.cardPhone {
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	color: var(--text);
+}
+
+.cardEmail {
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	color: var(--text-muted);
+}
+
+.cardPhone:hover,
+.cardEmail:hover {
+	color: var(--accent);
+}
+
+/* ── program grid ── */
+.programGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 1.25rem;
+}
+
+.programCard {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	padding: 1.75rem;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	background: var(--accent-dim);
+	transition: border-color 0.2s ease;
+}
+
+.programCard:hover {
+	border-color: var(--accent);
+}
+
+.programTag {
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--accent);
+}
+
+.programTitle {
+	font-family: var(--font-display);
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--text);
+}
+
+.programDesc {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	line-height: 1.6;
+	flex: 1;
+}
+
+.programPhone {
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	color: var(--text);
+	margin-top: 0.5rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid var(--border);
+}
+
+.programPhone:hover {
+	color: var(--accent);
+}
+
+/* ── responsive ── */
+@media (max-width: 600px) {
+	.teamGrid,
+	.programGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.generalContact {
+		max-width: 100%;
+	}
+}

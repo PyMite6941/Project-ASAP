@@ -21,6 +21,9 @@ export default function Navbar() {
 					<Link to='/find-people'>Find People</Link>
 				</li>
 				<li>
+					<Link to='/contacts'>Contact</Link>
+				</li>
+				<li>
 					<Link
 						to='/login'
 						className={styles.loginBtn}>
@@ -40,18 +43,13 @@ export default function Navbar() {
 
 			<ul className={`${styles.drawer} ${open ? styles.drawerOpen : ''}`}>
 				<li>
-					<Link
-						to='/donate'
-						onClick={() => setOpen(false)}>
-						Donate
-					</Link>
+					<Link to='/donate' onClick={() => setOpen(false)}>Donate</Link>
 				</li>
 				<li>
-					<Link
-						to='/find-people'
-						onClick={() => setOpen(false)}>
-						Find People
-					</Link>
+					<Link to='/find-people' onClick={() => setOpen(false)}>Find People</Link>
+				</li>
+				<li>
+					<Link to='/contacts' onClick={() => setOpen(false)}>Contact</Link>
 				</li>
 				<li>
 					<Link
