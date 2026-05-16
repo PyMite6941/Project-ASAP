@@ -15,6 +15,9 @@ export default function Hero() {
 				for everyone affected.
 			</p>
 			<div className={styles.actions}>
+				<button className={styles.btnSignin}>
+					<a href=''>Sign up/Login</a>
+				</button>
 				<button className={styles.btnPrimary}>Get started</button>
 				<button className={styles.btnGhost}>Learn more</button>
 			</div>

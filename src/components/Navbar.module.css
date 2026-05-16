@@ -38,3 +38,17 @@
 .links a:hover {
   color: var(--text);
 }
+
+.loginBtn {
+  border: 1px solid var(--border);
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  color: var(--text) !important;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.loginBtn:hover {
+  background: var(--hero-color);
+  border-color: var(--hero-color);
+  color: white !important;
+}

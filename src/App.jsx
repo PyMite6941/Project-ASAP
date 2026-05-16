@@ -1,16 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Section from './components/Section'
 import Footer from './components/Footer'
+import LoginSignup from './pages/LoginSignup'
+import Donations from './pages/Donations'
+import FindPeople from './pages/FindPeople'
 
-export default function App() {
+function Home() {
   return (
     <>
-      <Navbar />
+      <Hero />
 
       <main>
-        <Hero />
-
         <Section id="about" label="About" title="What this is about.">
           <p>
             Replace this with your actual content. This section pattern is reusable —
@@ -32,8 +34,21 @@ export default function App() {
           </p>
         </Section>
       </main>
-
-      <Footer />
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginSignup />} />
+        <Route path="/donate" element={<Donations />} />
+        <Route path="/find-people" element={<FindPeople />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }

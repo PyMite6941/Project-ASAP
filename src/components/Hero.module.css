@@ -40,6 +40,7 @@
   margin-top: 0.5rem;
 }
 
+.btnSignin,
 .btnPrimary,
 .btnGhost {
   font-family: var(--font-mono);
@@ -51,6 +52,18 @@
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid transparent;
+}
+
+.btnSignin {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btnSignin:hover {
+  background: var(--hero-color);
+  border-color: var(--hero-color);
+  color: white;
 }
 
 .btnPrimary {

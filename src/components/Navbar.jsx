@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <span className={styles.wordmark}>AppName</span>
+      <Link to="/" className={styles.wordmark}>Project ASAP</Link>
       <ul className={styles.links}>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><Link to="/donate">Donate</Link></li>
+        <li><Link to="/find-people">Find People</Link></li>
+        <li><Link to="/login" className={styles.loginBtn}>Sign up / Login</Link></li>
       </ul>
     </nav>
   )
