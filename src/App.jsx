@@ -40,24 +40,20 @@ function Home() {
 					id='contact'
 					label='Contact'
 					title="Let's talk.">
-					<p>Email us by pressing this button.</p>
+					<p>
+						Have questions about our relief efforts, want to volunteer, or need
+						help connecting with resources? Reach out — we respond within 24
+						hours.
+					</p>
+					<p style={{ marginTop: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.85rem', opacity: 0.7 }}>
+						info@projectasap.org
+					</p>
 					<a
-						href='mailto:info@projectasap.org'
-						style={{
-							display: 'inline-block',
-							marginTop: '1rem',
-							padding: '0.75rem 1.8rem',
-							background: 'var(--hero-color)',
-							color: 'var(--on-accent)',
-							fontFamily: 'var(--font-mono)',
-							fontSize: '0.72rem',
-							letterSpacing: '0.1em',
-							textTransform: 'uppercase',
-							borderRadius: '2px',
-							textDecoration: 'none',
-						}}
+						href='mailto:info@projectasap.org?subject=Project%20ASAP%20Inquiry'
+						className='btn'
+						style={{ marginTop: '1.25rem' }}
 					>
-						Email us
+						Send us an email
 					</a>
 				</Section>
 			</main>
