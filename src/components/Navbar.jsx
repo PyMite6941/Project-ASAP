@@ -43,19 +43,13 @@ export default function Navbar() {
 			{/* mobile drawer */}
 			<ul className={`${styles.drawer} ${open ? styles.drawerOpen : ''}`}>
 				<li>
-					<Link
-						to='/donate'
-						onClick={() => setOpen(false)}>
-						Donate
-					</Link>
+					<Link to='/donate' onClick={() => setOpen(false)}>Donate</Link>
 				</li>
 				<li>
-					<Link
-						to='/login'
-						onClick={() => setOpen(false)}
-						className={styles.loginBtn}>
-						Sign up / Login
-					</Link>
+					<Link to='/find-people' onClick={() => setOpen(false)}>Find People</Link>
+				</li>
+				<li>
+					<Link to='/login' onClick={() => setOpen(false)} className={styles.loginBtn}>Sign up / Login</Link>
 				</li>
 			</ul>
 		</nav>

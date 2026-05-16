@@ -5,6 +5,7 @@ import Section from './components/Section';
 import Footer from './components/Footer';
 import LoginSignup from './pages/LoginSignup';
 import Donations from './pages/Donations';
+import FindPeople from './pages/FindPeople';
 
 function Home() {
 	return (
