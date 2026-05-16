@@ -1,21 +1,21 @@
 .footer {
-  width: 100%;
-  padding: 0 var(--pad-x) 2.5rem;
+	width: 100%;
+	padding: 0 var(--pad-x) 2.5rem;
 }
 
 .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1.5rem;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1.5rem;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 }
 
 .copy,
 .built {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
+	font-family: var(--font-mono);
+	font-size: 0.68rem;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
 }

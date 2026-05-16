@@ -1,13 +1,15 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.css';
 
 export default function Footer() {
-  return (
-    <footer className={styles.footer}>
-      <hr />
-      <div className={styles.inner}>
-        <span className={styles.copy}>© {new Date().getFullYear()} AppName</span>
-        <span className={styles.built}>Built with React + Vite</span>
-      </div>
-    </footer>
-  )
+	return (
+		<footer className={styles.footer}>
+			<hr />
+			<div className={styles.inner}>
+				<span className={styles.copy}>
+					© {new Date().getFullYear()} AppName
+				</span>
+				<span className={styles.built}>Built with React + Vite</span>
+			</div>
+		</footer>
+	);
 }

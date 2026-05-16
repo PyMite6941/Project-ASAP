@@ -1,3 +1,8 @@
 export default function Donations() {
-  return null
+	return (
+		<section className='donations'>
+			<h1>Donate to Project ASAP</h1>
+			<br></br>
+		</section>
+	);
 }

@@ -16,9 +16,6 @@ export default function Hero() {
 				for everyone affected.
 			</p>
 			<div className={styles.actions}>
-				<button className={styles.btnSignin}>
-					<Link to='/login'>Sign up/Login</Link>
-				</button>
 				<button
 					className={styles.btnPrimary}
 					onClick={() => (window.location.href = 'tel:+1234567890')}>
