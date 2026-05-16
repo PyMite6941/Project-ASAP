@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -16,9 +17,13 @@ export default function Hero() {
 			</p>
 			<div className={styles.actions}>
 				<button className={styles.btnSignin}>
-					<a href=''>Sign up/Login</a>
+					<Link to='/login'>Sign up/Login</Link>
 				</button>
-				<button className={styles.btnPrimary}>Get started</button>
+				<button
+					className={styles.btnPrimary}
+					onClick={() => (window.location.href = 'tel:+1234567890')}>
+					Call our First Responders
+				</button>
 				<button className={styles.btnGhost}>Learn more</button>
 			</div>
 		</section>

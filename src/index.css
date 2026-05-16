@@ -67,6 +67,21 @@ hr {
 	width: 100%;
 }
 
+/* ── responsive overrides ── */
+@media (max-width: 768px) {
+  :root {
+    --pad-x: 1.25rem;
+    --pad-section: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --pad-x: 1rem;
+    --pad-section: 2.5rem;
+  }
+}
+
 /* accent chip / label */
 .label {
 	font-family: var(--font-mono);

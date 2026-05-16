@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1.4rem var(--pad-x);
   border-bottom: 1px solid var(--border);
   position: sticky;
@@ -20,10 +21,12 @@
   color: var(--text);
 }
 
+/* ── desktop links ── */
 .links {
   list-style: none;
   display: flex;
   gap: 2.5rem;
+  align-items: center;
 }
 
 .links a {
@@ -39,6 +42,7 @@
   color: var(--text);
 }
 
+/* ── login pill ── */
 .loginBtn {
   border: 1px solid var(--border);
   padding: 0.4rem 1rem;
@@ -51,4 +55,93 @@
   background: var(--hero-color);
   border-color: var(--hero-color);
   color: white !important;
+}
+
+/* ── hamburger ── */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burgerLine,
+.burgerLineTop,
+.burgerLineMid,
+.burgerLineBot {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform-origin: center;
+}
+
+.burgerLineTop  { transform: translateY(7px) rotate(45deg); }
+.burgerLineMid  { opacity: 0; }
+.burgerLineBot  { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── mobile drawer ── */
+.drawer {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  border-top: 1px solid var(--border);
+  margin-top: 1rem;
+}
+
+.drawerOpen {
+  max-height: 300px;
+}
+
+.drawer li {
+  border-bottom: 1px solid var(--border);
+}
+
+.drawer a {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  padding: 1rem 0;
+  transition: color 0.2s ease;
+}
+
+.drawer a:hover {
+  color: var(--hero-color);
+}
+
+/* ── breakpoints ── */
+
+/* tablet and below: show burger, hide desktop links */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .drawer {
+    display: flex;
+  }
+}
+
+/* mobile: tighten wordmark */
+@media (max-width: 480px) {
+  .wordmark {
+    font-size: 1.1rem;
+  }
 }
