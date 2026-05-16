@@ -41,12 +41,24 @@ function Home() {
 					label='Contact'
 					title="Let's talk.">
 					<p>Email us by pressing this button.</p>
-					<button
-						onClick={() =>
-							(window.location.href = 'mailto:info@projectasap.org')
-						}>
+					<a
+						href='mailto:info@projectasap.org'
+						style={{
+							display: 'inline-block',
+							marginTop: '1rem',
+							padding: '0.75rem 1.8rem',
+							background: 'var(--hero-color)',
+							color: 'var(--on-accent)',
+							fontFamily: 'var(--font-mono)',
+							fontSize: '0.72rem',
+							letterSpacing: '0.1em',
+							textTransform: 'uppercase',
+							borderRadius: '2px',
+							textDecoration: 'none',
+						}}
+					>
 						Email us
-					</button>
+					</a>
 				</Section>
 			</main>
 		</>
