@@ -8,14 +8,14 @@
 
 :root {
 	--bg: #f69d6b;
-	--bg-raised: #141413;
-	--border: rgba(0, 0, 0, 0.15);
-	--hero-color: #ff842a;
-	--on-accent: #0d2b2b;
-	--text: #0d448d;
-	--text-muted: rgba(13, 68, 141, 0.55);
-	--accent: #d4a853;
-	--accent-dim: rgba(212, 168, 83, 0.12);
+	--bg-raised: #0d448d;
+	--border: rgba(13, 68, 141, 0.25);
+	--hero-color: #0d448d;
+	--on-accent: #fef5ec;
+	--text: #0d2b2b;
+	--text-muted: rgba(13, 43, 43, 0.6);
+	--accent: #0d448d;
+	--accent-dim: rgba(13, 68, 141, 0.1);
 
 	--font-display: 'Cormorant Garamond', Georgia, serif;
 	--font-mono: 'DM Mono', 'Courier New', monospace;

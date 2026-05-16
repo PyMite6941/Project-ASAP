@@ -22,7 +22,8 @@
 
 .headline em {
 	font-style: italic;
-	color: var(--accent);
+	color: var(--hero-color);
+	opacity: 0.75;
 }
 
 .sub {
