@@ -6,7 +6,7 @@ export default function Footer() {
 			<hr />
 			<div className={styles.inner}>
 				<span className={styles.copy}>
-					© {new Date().getFullYear()} AppName
+					© {new Date().getFullYear()} Project ASAP. All rights reserved.
 				</span>
 				<span className={styles.built}>Built with React + Vite</span>
 			</div>

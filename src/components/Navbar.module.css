@@ -56,7 +56,7 @@
 .loginBtn:hover {
 	background: var(--hero-color);
 	border-color: var(--hero-color);
-	color: white !important;
+	color: var(--on-accent) !important;
 }
 
 /* ── hamburger ── */

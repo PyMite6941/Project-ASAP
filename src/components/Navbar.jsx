@@ -13,7 +13,6 @@ export default function Navbar() {
 				Project ASAP
 			</Link>
 
-			{/* desktop links */}
 			<ul className={styles.links}>
 				<li>
 					<Link to='/donate'>Donate</Link>
@@ -30,7 +29,6 @@ export default function Navbar() {
 				</li>
 			</ul>
 
-			{/* mobile hamburger */}
 			<button
 				className={styles.burger}
 				onClick={() => setOpen((o) => !o)}
@@ -40,16 +38,28 @@ export default function Navbar() {
 				<span className={open ? styles.burgerLineBot : styles.burgerLine} />
 			</button>
 
-			{/* mobile drawer */}
 			<ul className={`${styles.drawer} ${open ? styles.drawerOpen : ''}`}>
 				<li>
-					<Link to='/donate' onClick={() => setOpen(false)}>Donate</Link>
+					<Link
+						to='/donate'
+						onClick={() => setOpen(false)}>
+						Donate
+					</Link>
 				</li>
 				<li>
-					<Link to='/find-people' onClick={() => setOpen(false)}>Find People</Link>
+					<Link
+						to='/find-people'
+						onClick={() => setOpen(false)}>
+						Find People
+					</Link>
 				</li>
 				<li>
-					<Link to='/login' onClick={() => setOpen(false)} className={styles.loginBtn}>Sign up / Login</Link>
+					<Link
+						to='/login'
+						onClick={() => setOpen(false)}
+						className={styles.loginBtn}>
+						Sign up / Login
+					</Link>
 				</li>
 			</ul>
 		</nav>

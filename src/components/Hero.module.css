@@ -63,7 +63,7 @@
 .btnSignin:hover {
 	background: var(--hero-color);
 	border-color: var(--hero-color);
-	color: white;
+	color: var(--on-accent);
 }
 
 .btnPrimary {

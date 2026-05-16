@@ -128,7 +128,7 @@
 .presetActive {
 	background: var(--hero-color);
 	border-color: var(--hero-color);
-	color: white;
+	color: var(--on-accent);
 }
 
 /* inputs */
@@ -182,7 +182,7 @@
 .submitBtn {
 	width: 100%;
 	background: var(--hero-color);
-	color: white;
+	color: var(--on-accent);
 	border: none;
 	border-radius: 3px;
 	padding: 1rem;
@@ -225,7 +225,7 @@
 	height: 64px;
 	border-radius: 50%;
 	background: var(--hero-color);
-	color: white;
+	color: var(--on-accent);
 	font-size: 1.8rem;
 }
 
