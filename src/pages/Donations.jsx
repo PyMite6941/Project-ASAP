@@ -1,8 +1,12 @@
+import Section from './components/Section';
+
 export default function Donations() {
 	return (
-		<section className='donations'>
-			<h1>Donate to Project ASAP</h1>
+		<Section
+			id='donations'
+			label='Donations'
+			title='Donate to Project ASAP'>
 			<br></br>
-		</section>
+		</Section>
 	);
 }

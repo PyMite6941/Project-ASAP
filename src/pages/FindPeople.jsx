@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Section from '../components/Section';
 import styles from './FindPeople.module.css';
 
 export default function FindPeople() {
@@ -26,8 +27,10 @@ export default function FindPeople() {
 		},
 	]);
 	return (
-		<section className='find-people'>
-			<h1>Find Missing People</h1>
+		<Section
+			id='find-people'
+			label='Find People'
+			title='Find Missing People'>
 			<div className={styles.grid}>
 				{missingPeople.map((person, index) => (
 					<div
@@ -38,12 +41,31 @@ export default function FindPeople() {
 							<strong>Last Known Location:</strong> {person.address}
 						</p>
 						{person.photo ? (
-							<img src={person.photo} alt={`${person.name}'s photo`} className={styles.photo} />
+							<img
+								src={person.photo}
+								alt={`${person.name}'s photo`}
+								className={styles.photo}
+							/>
 						) : (
-							<div className={styles.photoPlaceholder} aria-label="No photo available">
-								<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="40" cy="28" r="16" fill="currentColor" opacity="0.5" />
-									<path d="M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32" fill="currentColor" opacity="0.35" />
+							<div
+								className={styles.photoPlaceholder}
+								aria-label='No photo available'>
+								<svg
+									viewBox='0 0 80 80'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'>
+									<circle
+										cx='40'
+										cy='28'
+										r='16'
+										fill='currentColor'
+										opacity='0.5'
+									/>
+									<path
+										d='M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32'
+										fill='currentColor'
+										opacity='0.35'
+									/>
 								</svg>
 							</div>
 						)}
@@ -70,6 +92,6 @@ export default function FindPeople() {
 				Together, we can help bring hope and reunite families during these
 				difficult times. Thank you for your support.
 			</p>
-		</section>
+		</Section>
 	);
 }

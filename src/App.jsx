@@ -18,10 +18,11 @@ function Home() {
 					label='About'
 					title='What this is about.'>
 					<p>
-						Replace this with your actual content. This section pattern is
-						reusable — pass any JSX as children. Add cards, grids, images, or
-						whatever the feature needs. The layout stays full-width and
-						consistent.
+						This project is not about making money off of natural disasters, but
+						empowerment and recovery for everyone affected. We work to provide
+						resources and support to those in need, and to connect natural
+						disaster survivors with first responders and volunteers who can help
+						them.
 					</p>
 				</Section>
 
@@ -39,7 +40,13 @@ function Home() {
 					id='contact'
 					label='Contact'
 					title="Let's talk.">
-					<p>A form, email link, or social links live here.</p>
+					<p>Email us by pressing this button.</p>
+					<button
+						onClick={() =>
+							(window.location.href = 'mailto:info@projectasap.org')
+						}>
+						Email us
+					</button>
 				</Section>
 			</main>
 		</>
