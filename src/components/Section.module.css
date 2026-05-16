@@ -22,5 +22,5 @@
 .body {
 	color: var(--text-muted);
 	line-height: 1.75;
-	max-width: 72ch;
+	width: 100%;
 }
